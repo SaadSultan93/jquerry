@@ -1,0 +1,30 @@
+<select id="ddluni" onchange="CreateTextBox(this)">
+    <option>
+        select any unversity
+    </option>
+    <option>
+        IBA
+    </option>
+    <option>
+        LUMS
+    </option>
+    <option>
+        Other
+    </option>
+</select>
+
+<p id="p1">
+    <button>Add My University</button>
+</p>
+<script>
+    function  CreateTextBox(ddl)
+    {
+        if(ddl.value == "Other")
+        {
+            let txtbx = document.createElement("input");
+    
+    document.getElementById("p1").append(txtbx);
+        }
+       
+    }
+</script>
